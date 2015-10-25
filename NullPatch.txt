@@ -1,0 +1,4 @@
+#Maintained by: Marchrius for: Acer Aspire 6930G
+#NullPatch.txt
+
+# This is not a patch....

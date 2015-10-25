@@ -1,0 +1,36 @@
+#Maintained by: Marchrius for: AcerAspire6930G
+into device label ARPT parent_label RP04 remove_entry;
+into device label RP04 insert
+begin
+\n\n
+Device (ARPT)\n
+{\n
+Name (_ADR, Zero)\n
+Method (_DSM, 4, NotSerialized)\n
+{\n
+If (LEqual (Arg2, Zero))\n
+{\n
+Return (Buffer (One)\n
+{\n
+0x03\n
+})\n
+}\n
+\n
+Return (Package (0x0C)\n
+{\n
+"AAPL,slot-name", "AirPort",\n 
+"device_type", "AirPort",\n 
+"name", "AirPort Extreme",\n
+"model", "AzureWave AW-CE123H (BCM4352HMB) 802.11 a/b/g/n/ac Wireless Network Controller", 
+"built-in", Buffer (One) { 0x00 },\n
+"compatible", "pci14e4,43a0"\n
+})\n
+}\n
+\n\n
+Name (_PRW, Package (0x02)\n
+{\n
+0x09,\n
+0x04\n
+})\n
+}\n
+end

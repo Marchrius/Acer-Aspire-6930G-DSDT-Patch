@@ -1,0 +1,4 @@
+[battery] >> Battery Section <<	NullPatch.txt
+[battery] Battery Fix for Acer Aspire 6930G	battery/battery_Acer-Aspire-9630g.txt
+[wifi]    >> WiFi Section <<	NullPatch.txt
+[wifi]    AzureWare AW-CE123H	wifi/wiwi_AW-CE123H_BCM4352HMB.txt
